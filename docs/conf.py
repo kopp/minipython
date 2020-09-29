@@ -276,7 +276,7 @@ texinfo_documents = [
 epub_title = u'MiniPython'
 epub_author = u'Multiple authors'
 epub_publisher = u'Multiple authors'
-epub_copyright = u'2020, MyTechnoTalent, LLC'
+epub_copyright = u'2020, My Techno Talent, LLC'
 
 # The basename for the epub file. It defaults to the project name.
 #epub_basename = u'MiniPython'

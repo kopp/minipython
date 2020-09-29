@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -785,12 +785,12 @@ STATIC qstr compile_classdef_helper(compiler_t *comp, const byte *p, uint emit_o
 STATIC bool compile_built_in_decorator(compiler_t *comp, const byte *p, const byte *ptop, uint *emit_options) {
     qstr qst;
     p = pt_extract_id(p, &qst);
-    if (qst != MP_QSTR_micropython) {
+    if (qst != MP_QSTR_minipython) {
         return false;
     }
 
     if (p >= ptop || pt_next(p) != ptop) {
-        compile_syntax_error(comp, NULL, "invalid micropython decorator");
+        compile_syntax_error(comp, NULL, "invalid minipython decorator");
         return true;
     }
 
@@ -809,7 +809,7 @@ STATIC bool compile_built_in_decorator(compiler_t *comp, const byte *p, const by
         *emit_options = MP_EMIT_OPT_ASM;
     #endif
     } else {
-        compile_syntax_error(comp, NULL, "invalid micropython decorator");
+        compile_syntax_error(comp, NULL, "invalid minipython decorator");
     }
 
     return true;

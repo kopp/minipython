@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -517,7 +517,7 @@ MP_DEFINE_CONST_FUN_OBJ_VAR_BETWEEN(mp_stream_ioctl_obj, 2, 3, stream_ioctl);
  *
  * These functions have POSIX-compatible signature (except for "void *stream"
  * first argument instead of "int fd"). They are useful to port existing
- * POSIX-compatible software to work with MicroPython streams.
+ * POSIX-compatible software to work with MiniPython streams.
  */
 
 // errno-like variable. If any of the functions below returned with error

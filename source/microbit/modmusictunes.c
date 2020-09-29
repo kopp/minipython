@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The music encoded herein is either in the public domain, composed by
  * Nicholas H.Tollervey or the composer is untraceable and covered by fair

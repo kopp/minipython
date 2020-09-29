@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -26,7 +26,7 @@
 
 #include <stdint.h>
 
-// Options to control how MicroPython is built, overriding defaults in py/mpconfig.h
+// Options to control how MiniPython is built, overriding defaults in py/mpconfig.h
 
 // object representation
 #define MICROPY_OBJ_REPR            (MICROPY_OBJ_REPR_C)

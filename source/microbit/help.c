@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -29,7 +29,7 @@
 #include "microbit/modmicrobit.h"
 
 const char *microbit_help_text =
-"Welcome to MicroPython on the micro:bit!\n"
+"Welcome to MiniPython on the micro:bit!\n"
 "\n"
 "Try these commands:\n"
 "  display.scroll('Hello')\n"
@@ -54,8 +54,8 @@ const char *microbit_help_text =
 "For a list of available modules, type help('modules')\n"
 "\n"
 "For more information about Python, visit: http://python.org/\n"
-"To find out about MicroPython, visit: http://micropython.org/\n"
-"Python/micro:bit documentation is here: https://microbit-micropython.readthedocs.io/\n"
+"To find out about MiniPython, visit: http://minipython.org/\n"
+"Python/micro:bit documentation is here: https://minipython.readthedocs.io/\n"
 ;
 
 typedef struct _mp_doc_t {
@@ -175,7 +175,7 @@ STATIC const mp_doc_t help_table_instances[] = {
     // Antigravity
     {&antigravity_module, "See: http://xkcd.com/353/\n"},
     // This module
-    {&this_module, "The Zen of Python defines what it is to be Pythonic. It wouldn't fit on this\ndevice so we've written a Zen of MicroPython instead.\n"},
+    {&this_module, "The Zen of Python defines what it is to be Pythonic. It wouldn't fit on this\ndevice so we've written a Zen of MiniPython instead.\n"},
     {&this_authors_obj, "Use authors() to reveal the names of the people who created this software.\n"},
     // Love module
     {&love_module, "All you need. Use love.badaboom() to repeat the effect.\n"},

@@ -8,7 +8,7 @@ directories that contain files. Python supports the various operations needed
 to work with such file systems.
 
 However, since the micro:bit is a limited device in terms of both hardware and
-storage capacity MicroPython provides a small subset of the functions needed
+storage capacity MiniPython provides a small subset of the functions needed
 to persist data on the device. Because of memory constraints **there is
 approximately 30k of storage available** on the file system.
 
@@ -23,7 +23,7 @@ approximately 30k of storage available** on the file system.
     However, if you switch your device off the data will remain intact until
     you either delete it (see below) or re-flash the device.
 
-MicroPython on the micro:bit provides a flat file system; i.e. there is no
+MiniPython on the micro:bit provides a flat file system; i.e. there is no
 notion of a directory hierarchy, the file system is just a list of named
 files. Reading and writing a file is achieved via the standard Python ``open``
 function and the resulting file-like object (representing the file) of types
@@ -34,7 +34,7 @@ function and the resulting file-like object (representing the file) of types
 If a file ends in the ``.py`` file extension then it can be imported. For
 example, a file named ``hello.py`` can be imported like this: ``import hello``.
 
-An example session in the MicroPython REPL may look something like this::
+An example session in the MiniPython REPL may look something like this::
 
     >>> with open('hello.py', 'w') as hello:
     ...    hello.write("print('Hello')")

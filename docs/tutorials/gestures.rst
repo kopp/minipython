@@ -3,9 +3,9 @@ Gestures
 
 The really interesting side-effect of having an accelerometer is gesture
 detection. If you move your BBC micro:bit in a certain way (as a gesture) then
-MicroPython is able to detect this.
+MiniPython is able to detect this.
 
-MicroPython is able to recognise the following gestures: ``up``, ``down``,
+MiniPython is able to recognise the following gestures: ``up``, ``down``,
 ``left``, ``right``, ``face up``, ``face down``, ``freefall``, ``3g``, ``6g``,
 ``8g``, ``shake``. Gestures are always represented as strings. While most of
 the names should be obvious, the ``3g``, ``6g`` and ``8g`` gestures apply when

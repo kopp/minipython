@@ -6,13 +6,13 @@ data: representation of information (in a digital form when stored on
 computers). If you store data on a computer it should persist, even if you
 switch the device off and on again.
 
-Happily MicroPython on the micro:bit allows you to do this with a very simple
+Happily MiniPython on the micro:bit allows you to do this with a very simple
 file system. Because of memory constraints **there is approximately 30k of
 storage available** on the file system. 
 
 .. note::
 
-    The micropython file system should not be confused
+    The minipython file system should not be confused
     with the micro:bit mass storage mode which presents the device as a USB drive. 
     Mass storage mode is only intended for copying across a HEX file, so you won't
     see files you create using the file system appearing on the MICROBIT drive.
@@ -36,12 +36,12 @@ represent the information. For example, ``.txt`` indicates a text file,
 
 Some file systems (such as the one found on your laptop or PC) allow you to
 organise your files into directories: named containers that group related files
-and sub-directories together. However, *the file system provided by MicroPython
+and sub-directories together. However, *the file system provided by MiniPython
 is a flat file system*. A flat file system does not have directories - all
 your files are just stored in the same place.
 
 The Python programming language contains easy to use and powerful ways in which
-to work with a computer's file system. MicroPython on the micro:bit implements
+to work with a computer's file system. MiniPython on the micro:bit implements
 a useful subset of these features to make it easy to read and write files on
 the device, while also providing consistency with other versions of Python.
 
@@ -60,7 +60,7 @@ Open Sesame
 Reading and writing a file on the file system is achieved by the ``open``
 function. Once a file is opened you can do stuff with it until you close it
 (analogous with the way we use paper files). It is essential you close a file
-so MicroPython knows you've finished with it.
+so MiniPython knows you've finished with it.
 
 The best way to make sure of this is to use the ``with`` statement like this::
 
@@ -79,7 +79,7 @@ file and assign it to the ``content`` object.
 Here's the important point, *the next line containing the* ``print`` *statement
 is not indented*. The code block associated with the ``with`` statement is only
 the single line that reads the file. Once the code block associated with the
-``with`` statement is closed then Python (and MicroPython) will automatically
+``with`` statement is closed then Python (and MiniPython) will automatically
 close the file for you. This is called context handling and the ``open``
 function creates objects that are context handlers for files.
 
@@ -94,7 +94,7 @@ Don't be. I'm simply saying your code should look like this::
         # Do stuff with some_object in this block of code
         # associated with the with statement.
 
-    # When the block is finished then MicroPython
+    # When the block is finished then MiniPython
     # automatically closes the file for you.
 
 Just like a paper file, a digital file is opened for two reasons: to read its
@@ -126,7 +126,7 @@ Simple!
     content somewhere, close it, append your data to the content and then open
     it to write again with the revised content.
 
-    While this is the case in MicroPython, "normal" Python can open
+    While this is the case in MiniPython, "normal" Python can open
     files to write in "append" mode. That we can't do this on the micro:bit is
     a result of the simple implementation of the file system.
 
@@ -139,7 +139,7 @@ you need to delete them too.
 
 On a regular computer, it is the role of the operating system (like Windows,
 OSX or Linux) to manage this on Python's behalf. Such functionality is made
-available in Python via a module called ``os``. Since MicroPython **is** the
+available in Python via a module called ``os``. Since MiniPython **is** the
 operating system we've decided to keep the appropriate functions in the ``os``
 module for consistency so you'll know where to find them when you use "regular"
 Python on a device like a laptop or Raspberry Pi.
@@ -221,9 +221,9 @@ Mainly main.py
 ++++++++++++++
 
 The file system also has an interesting property: if you just flashed the
-MicroPython runtime onto the device then when it starts it's simply waiting
+MiniPython runtime onto the device then when it starts it's simply waiting
 for something to do. However, if you copy a special file called ``main.py``
-onto the file system, upon restarting the device, MicroPython will run the
+onto the file system, upon restarting the device, MiniPython will run the
 contents of the ``main.py`` file.
 
 Furthermore, if you copy other Python files onto the file system then you can
@@ -245,11 +245,11 @@ display. The important point is that such an example is split between two
 Python modules and the ``import`` statement is used to share code.
 
 .. note::
-    If you have flashed a script onto the device in addition to the MicroPython
-    runtime, then MicroPython will ignore ``main.py`` and run your embedded
+    If you have flashed a script onto the device in addition to the MiniPython
+    runtime, then MiniPython will ignore ``main.py`` and run your embedded
     script instead.
 
-    To flash just the MicroPython runtime, simply make sure the script you
+    To flash just the MiniPython runtime, simply make sure the script you
     may have written in your editor has zero characters in it. Once flashed
     you'll be able to copy over a ``main.py`` file.
 

@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -136,7 +136,7 @@ mp_obj_dict_t *mp_obj_module_get_globals(mp_obj_t self_in) {
 STATIC const mp_rom_map_elem_t mp_builtin_module_table[] = {
     { MP_ROM_QSTR(MP_QSTR___main__), MP_ROM_PTR(&mp_module___main__) },
     { MP_ROM_QSTR(MP_QSTR_builtins), MP_ROM_PTR(&mp_module_builtins) },
-    { MP_ROM_QSTR(MP_QSTR_micropython), MP_ROM_PTR(&mp_module_micropython) },
+    { MP_ROM_QSTR(MP_QSTR_minipython), MP_ROM_PTR(&mp_module_minipython) },
 
 #if MICROPY_PY_ARRAY
     { MP_ROM_QSTR(MP_QSTR_array), MP_ROM_PTR(&mp_module_array) },

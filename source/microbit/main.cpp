@@ -9,7 +9,7 @@
 gpio_t reset_button_gpio;
 gpio_irq_t reset_button_gpio_irq;
 MicroBitDisplay ubit_display;
-MicroPythonI2C ubit_i2c(I2C_SDA0, I2C_SCL0);
+MiniPythonI2C ubit_i2c(I2C_SDA0, I2C_SCL0);
 
 // Global pointers to instances of DAL components that are created dynamically
 MicroBitAccelerometer *ubit_accelerometer;
@@ -154,12 +154,12 @@ int main(void) {
         extern uint32_t __StackTop;
         static uint32_t mp_heap[10240 / sizeof(uint32_t)];
 
-        // Initialise memory regions: stack and MicroPython heap
+        // Initialise memory regions: stack and MiniPython heap
         mp_stack_set_top(&__StackTop);
         mp_stack_set_limit(1800); // stack is 2k
         gc_init(mp_heap, (uint8_t*)mp_heap + sizeof(mp_heap));
 
-        // Initialise the MicroPython runtime
+        // Initialise the MiniPython runtime
         mp_init();
         mp_hal_init();
         readline_init0();

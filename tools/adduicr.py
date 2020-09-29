@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 '''
-Add a UICR region to the hex firmware for MicroPython on the micro:bit.
+Add a UICR region to the hex firmware for MiniPython on the micro:bit.
 
 Usage: ./adduicr.py <firmware.hex> <version_string_address> [-o <combined.hex>]
 
@@ -22,7 +22,7 @@ UICR_MAGIC_NUMBER = 0x17eeb07c
 if __name__ == '__main__':
     arg_parser = argparse.ArgumentParser(description='Add UICR region to hex firmware for the micro:bit.')
     arg_parser.add_argument('-o', '--output', default=sys.stdout, type=argparse.FileType('wt'), help='output file (default is stdout)')
-    arg_parser.add_argument('firmware', nargs=1, help='input MicroPython firmware')
+    arg_parser.add_argument('firmware', nargs=1, help='input MiniPython firmware')
     arg_parser.add_argument('address', nargs=1, type=lambda x: int(x, 0), help='address in flash of the version string')
     args = arg_parser.parse_args()
 

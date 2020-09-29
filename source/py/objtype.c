@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -127,7 +127,7 @@ STATIC void mp_obj_class_lookup(struct class_lookup_data  *lookup, const mp_obj_
 
         if (type->locals_dict != NULL) {
             // search locals_dict (the set of methods/attributes)
-            assert(type->locals_dict->base.type == &mp_type_dict); // MicroPython restriction, for now
+            assert(type->locals_dict->base.type == &mp_type_dict); // MiniPython restriction, for now
             mp_map_t *locals_map = &type->locals_dict->map;
             mp_map_elem_t *elem = mp_map_lookup(locals_map, MP_OBJ_NEW_QSTR(lookup->attr), MP_MAP_LOOKUP);
             if (elem != NULL) {
@@ -254,7 +254,7 @@ mp_obj_t mp_obj_instance_make_new(const mp_obj_type_t *self, size_t n_args, size
     // This executes only "__new__" part of obejection creation.
     // TODO: This won't work will for classes with native bases.
     // TODO: This is hack, should be resolved along the lines of
-    // https://github.com/micropython/micropython/issues/606#issuecomment-43685883
+    // https://github.com/minipython/minipython/issues/606#issuecomment-43685883
     if (n_args == 1 && *args == MP_OBJ_SENTINEL) {
         return MP_OBJ_FROM_PTR(o);
     }
@@ -900,7 +900,7 @@ STATIC void type_attr(mp_obj_t self_in, qstr attr, mp_obj_t *dest) {
         // TODO CPython allows STORE_ATTR to a class, but is this the correct implementation?
 
         if (self->locals_dict != NULL) {
-            assert(self->locals_dict->base.type == &mp_type_dict); // MicroPython restriction, for now
+            assert(self->locals_dict->base.type == &mp_type_dict); // MiniPython restriction, for now
             mp_map_t *locals_map = &self->locals_dict->map;
             if (dest[1] == MP_OBJ_NULL) {
                 // delete attribute
@@ -933,8 +933,8 @@ const mp_obj_type_t mp_type_type = {
 };
 
 mp_obj_t mp_obj_new_type(qstr name, mp_obj_t bases_tuple, mp_obj_t locals_dict) {
-    assert(MP_OBJ_IS_TYPE(bases_tuple, &mp_type_tuple)); // MicroPython restriction, for now
-    assert(MP_OBJ_IS_TYPE(locals_dict, &mp_type_dict)); // MicroPython restriction, for now
+    assert(MP_OBJ_IS_TYPE(bases_tuple, &mp_type_tuple)); // MiniPython restriction, for now
+    assert(MP_OBJ_IS_TYPE(locals_dict, &mp_type_dict)); // MiniPython restriction, for now
 
     // TODO might need to make a copy of locals_dict; at least that's how CPython does it
 

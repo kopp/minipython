@@ -8,7 +8,7 @@ in a pattern based on how they are multiplexed in rows/cols.
 # GPIO words starting at 0x50000500:
 #   RESERVED, OUT, OUTSET, OUTCLR, IN, DIR, DIRSET, DIRCLR
 
-@micropython.asm_thumb
+@minipython.asm_thumb
 def led_cycle():
     b(START)
 

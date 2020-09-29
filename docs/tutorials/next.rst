@@ -1,7 +1,7 @@
 Next Steps
 ----------
 
-These tutorials are only the first steps in using MicroPython with the
+These tutorials are only the first steps in using MiniPython with the
 BBC micro:bit. A musical analogy: you've got a basic understanding of
 a very simple instrument and confidently play "Three Blind Mice".
 
@@ -17,13 +17,13 @@ will make friends, find mentors, support each other and share resources.
 The examples in the tutorials are simple to explain but may not be the simplest
 or most efficient implementations. We've left out lots of *really fun stuff* so
 we could concentrate on arming you with the basics. If you *really* want to
-know how to make MicroPython fly on the BBC micro:bit then read the API
+know how to make MiniPython fly on the BBC micro:bit then read the API
 reference documentation. It contains information about *all* the capabilities
 available to you.
 
 Explore, experiment and be fearless trying things out ~ for these are the
 attributes of a virtuoso coder. To encourage you we have hidden a number of
-`Easter eggs <https://en.wikipedia.org/wiki/Easter_egg_(media)>`_ in MicroPython
+`Easter eggs <https://en.wikipedia.org/wiki/Easter_egg_(media)>`_ in MiniPython
 and the Python code editors. They're fun rewards for looking "under the hood" and
 "poking with a stick".
 

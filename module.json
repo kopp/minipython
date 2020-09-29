@@ -2,7 +2,7 @@
   "name": "minipython",
   "version": "1.0.0",
   "license": "MIT",
-  "description": "MicroPython port to the BBC micro:bit",
+  "description": "MiniPython port of the BBC micro:bit",
   "keywords": ["mbed-classic", "microbit", "runtime", "library", "micropython", "minipython"],
   "author": "Kevin Thomas <kevin@mytechnotalent.com>",
   "homepage": "http://minipython.org",

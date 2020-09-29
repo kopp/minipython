@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -62,7 +62,7 @@ STATIC const MP_DEFINE_STR_OBJ(version_obj, "3.4.0");
 STATIC const mp_obj_tuple_t mp_sys_version_info_obj = {{&mp_type_tuple}, 3, {I(3), I(4), I(0)}};
 
 // sys.implementation object
-// this holds the MicroPython version
+// this holds the MiniPython version
 STATIC const mp_obj_tuple_t mp_sys_implementation_version_info_obj = {
     {&mp_type_tuple},
     3,
@@ -74,7 +74,7 @@ STATIC MP_DEFINE_ATTRTUPLE(
     mp_sys_implementation_obj,
     impl_fields,
     2,
-        MP_ROM_QSTR(MP_QSTR_micropython),
+        MP_ROM_QSTR(MP_QSTR_minipython),
         MP_ROM_PTR(&mp_sys_implementation_version_info_obj)
 );
 #else
@@ -82,7 +82,7 @@ STATIC const mp_rom_obj_tuple_t mp_sys_implementation_obj = {
     {&mp_type_tuple},
     2,
     {
-        MP_ROM_QSTR(MP_QSTR_micropython),
+        MP_ROM_QSTR(MP_QSTR_minipython),
         MP_ROM_PTR(&mp_sys_implementation_version_info_obj),
     }
 };
@@ -91,7 +91,7 @@ STATIC const mp_rom_obj_tuple_t mp_sys_implementation_obj = {
 #undef I
 
 #ifdef MICROPY_PY_SYS_PLATFORM
-/// \constant platform - the platform that MicroPython is running on
+/// \constant platform - the platform that MiniPython is running on
 STATIC const MP_DEFINE_STR_OBJ(platform_obj, MICROPY_PY_SYS_PLATFORM);
 #endif
 

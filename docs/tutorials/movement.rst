@@ -49,7 +49,7 @@ steer and move around in games.
 Musical Mayhem
 ++++++++++++++
 
-One of the most wonderful aspects of MicroPython on the BBC micro:bit is how it
+One of the most wonderful aspects of MiniPython on the BBC micro:bit is how it
 lets you easily link different capabilities of the device together. For
 example, let's turn it into a musical instrument (of sorts).
 

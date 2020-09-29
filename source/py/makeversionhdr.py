@@ -1,5 +1,5 @@
 """
-Generate header file with macros defining MicroPython version info.
+Generate header file with macros defining MiniPython version info.
 
 This script works with Python 2.6, 2.7, 3.3 and 3.4.
 """
@@ -46,7 +46,7 @@ def get_version_info_from_git():
     except OSError:
         return None
 
-    # Try to extract MicroPython version from git tag
+    # Try to extract MiniPython version from git tag
     if git_tag.startswith("v"):
         ver = git_tag[1:].split("-")[0].split(".")
         if len(ver) == 2:

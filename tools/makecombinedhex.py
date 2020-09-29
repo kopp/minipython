@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 '''
-Combine the MicroPython firmware with a Python script and produce a hex file
+Combine the MiniPython firmware with a Python script and produce a hex file
 ready for uploading to the micro:bit.
 
 Usage: ./makecombinedhex.py <firmware.hex> <script.py> [-o <combined.hex>]
@@ -37,7 +37,7 @@ def find_uicr_line(hexfile):
 if __name__ == '__main__':
     arg_parser = argparse.ArgumentParser(description='Produce combined hex firmware for the micro:bit.')
     arg_parser.add_argument('-o', '--output', default=sys.stdout, type=argparse.FileType('wt'), help='output file (default is stdout)')
-    arg_parser.add_argument('firmware', nargs=1, help='input MicroPython firmware')
+    arg_parser.add_argument('firmware', nargs=1, help='input MiniPython firmware')
     arg_parser.add_argument('script', nargs=1, help='input Python script')
     args = arg_parser.parse_args()
 

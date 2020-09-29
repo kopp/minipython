@@ -311,7 +311,7 @@ It's also possible to elongate words with stress markers::
 Singing
 =======
 
-It's possible to make MicroPython sing phonemes.
+It's possible to make MiniPython sing phonemes.
 
 This is done by annotating a pitch related number onto a phoneme. The lower the
 number, the higher the pitch. Numbers roughly translate into musical notes as
@@ -321,7 +321,7 @@ shown in the diagram below:
 
 Annotations work by pre-pending a hash (``#``) sign and the pitch number in
 front of the phoneme. The pitch will remain the same until a new annotation
-is given. For example, make MicroPython sing a scale like this::
+is given. For example, make MiniPython sing a scale like this::
 
     solfa = [
         "#115DOWWWWWW",   # Doh

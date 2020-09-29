@@ -92,7 +92,7 @@ Functions
 
         Receiving ``0x03`` will stop your program by raising a Keyboard
         Interrupt. You can enable or disable this using
-        :func:`micropython.kbd_intr()`.
+        :func:`minipython.kbd_intr()`.
 
 .. method:: uart.readall()
 

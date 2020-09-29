@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -569,7 +569,7 @@ STATIC void close_over_variables_etc(compiler_t *comp, scope_t *this_scope, int 
                 for (int j = 0; j < this_scope->id_info_len; j++) {
                     id_info_t *id2 = &this_scope->id_info[j];
                     if (id2->kind == ID_INFO_KIND_FREE && id->qst == id2->qst) {
-                        // in MicroPython we load closures using LOAD_FAST
+                        // in MiniPython we load closures using LOAD_FAST
                         EMIT_LOAD_FAST(id->qst, id->local_num);
                         nfree += 1;
                     }
@@ -652,9 +652,9 @@ STATIC void compile_funcdef_lambdef_param(compiler_t *comp, mp_parse_node_t pn) 
 
             if (comp->have_star) {
                 comp->num_dict_params += 1;
-                // in MicroPython we put the default dict parameters into a dictionary using the bytecode
+                // in MiniPython we put the default dict parameters into a dictionary using the bytecode
                 if (comp->num_dict_params == 1) {
-                    // in MicroPython we put the default positional parameters into a tuple using the bytecode
+                    // in MiniPython we put the default positional parameters into a tuple using the bytecode
                     // we need to do this here before we start building the map for the default keywords
                     if (comp->num_default_params > 0) {
                         EMIT_ARG(build_tuple, comp->num_default_params);
@@ -695,7 +695,7 @@ STATIC void compile_funcdef_lambdef(compiler_t *comp, scope_t *scope, mp_parse_n
         return;
     }
 
-    // in MicroPython we put the default positional parameters into a tuple using the bytecode
+    // in MiniPython we put the default positional parameters into a tuple using the bytecode
     // the default keywords args may have already made the tuple; if not, do it now
     if (comp->num_default_params > 0 && comp->num_dict_params == 0) {
         EMIT_ARG(build_tuple, comp->num_default_params);
@@ -766,12 +766,12 @@ STATIC qstr compile_classdef_helper(compiler_t *comp, mp_parse_node_struct_t *pn
 
 // returns true if it was a built-in decorator (even if the built-in had an error)
 STATIC bool compile_built_in_decorator(compiler_t *comp, int name_len, mp_parse_node_t *name_nodes, uint *emit_options) {
-    if (MP_PARSE_NODE_LEAF_ARG(name_nodes[0]) != MP_QSTR_micropython) {
+    if (MP_PARSE_NODE_LEAF_ARG(name_nodes[0]) != MP_QSTR_minipython) {
         return false;
     }
 
     if (name_len != 2) {
-        compile_syntax_error(comp, name_nodes[0], "invalid micropython decorator");
+        compile_syntax_error(comp, name_nodes[0], "invalid minipython decorator");
         return true;
     }
 
@@ -789,7 +789,7 @@ STATIC bool compile_built_in_decorator(compiler_t *comp, int name_len, mp_parse_
         *emit_options = MP_EMIT_OPT_ASM;
     #endif
     } else {
-        compile_syntax_error(comp, name_nodes[1], "invalid micropython decorator");
+        compile_syntax_error(comp, name_nodes[1], "invalid minipython decorator");
     }
 
     return true;
@@ -3270,7 +3270,7 @@ STATIC void compile_scope_inline_asm(compiler_t *comp, scope_t *scope, pass_kind
 #endif
 
 STATIC void scope_compute_things(scope_t *scope) {
-    // in MicroPython we put the *x parameter after all other parameters (except **y)
+    // in MiniPython we put the *x parameter after all other parameters (except **y)
     if (scope->scope_flags & MP_SCOPE_FLAG_VARARGS) {
         id_info_t *id_param = NULL;
         for (int i = scope->id_info_len - 1; i >= 0; i--) {
@@ -3308,7 +3308,7 @@ STATIC void scope_compute_things(scope_t *scope) {
     // compute the index of cell vars
     for (int i = 0; i < scope->id_info_len; i++) {
         id_info_t *id = &scope->id_info[i];
-        // in MicroPython the cells come right after the fast locals
+        // in MiniPython the cells come right after the fast locals
         // parameters are not counted here, since they remain at the start
         // of the locals, even if they are cell vars
         if (id->kind == ID_INFO_KIND_CELL && !(id->flags & ID_FLAG_IS_PARAM)) {
@@ -3328,14 +3328,14 @@ STATIC void scope_compute_things(scope_t *scope) {
                     id_info_t *id2 = &scope->id_info[j];
                     if (id2->kind == ID_INFO_KIND_FREE && id->qst == id2->qst) {
                         assert(!(id2->flags & ID_FLAG_IS_PARAM)); // free vars should not be params
-                        // in MicroPython the frees come first, before the params
+                        // in MiniPython the frees come first, before the params
                         id2->local_num = num_free;
                         num_free += 1;
                     }
                 }
             }
         }
-        // in MicroPython shift all other locals after the free locals
+        // in MiniPython shift all other locals after the free locals
         if (num_free > 0) {
             for (int i = 0; i < scope->id_info_len; i++) {
                 id_info_t *id = &scope->id_info[i];

@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -33,7 +33,7 @@ extern "C" {
 
 typedef struct _microbit_i2c_obj_t {
     mp_obj_base_t base;
-    MicroPythonI2C *i2c;
+    MiniPythonI2C *i2c;
 } microbit_i2c_obj_t;
 
 STATIC mp_obj_t microbit_i2c_init(mp_uint_t n_args, const mp_obj_t *pos_args, mp_map_t *kw_args) {

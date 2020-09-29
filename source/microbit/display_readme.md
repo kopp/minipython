@@ -1,6 +1,6 @@
 # Notes on the Display
 
-Rendering of images to the display is now done entirely within MicroPython
+Rendering of images to the display is now done entirely within MiniPython
 without using the DAL's rendering logic.
 
 This achieves the following:

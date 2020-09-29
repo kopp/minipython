@@ -1,7 +1,7 @@
 MiniPython for the BBC micro:bit
 ================================
 
-This is the source code for MiniPython running on the BBC micro:bit with additional features based on the MicroPython for the BBC micro:bit!
+This is the source code for MiniPython running on the BBC micro:bit with additional features based on the original MicroPython version for the BBC micro:bit!
 
 To get involved with the micro:bit community join the Slack channel by signing up here:
 https://tech.microbit.org/get-involved/where-to-find/

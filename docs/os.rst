@@ -3,10 +3,10 @@ The ``os``  Module
 
 .. py:module:: os
 
-MicroPython contains an ``os`` module based upon the ``os`` module in the
+MiniPython contains an ``os`` module based upon the ``os`` module in the
 Python standard library. It's used for accessing what would traditionally be
 termed as operating system dependent functionality. Since there is no operating
-system in MicroPython the module provides functions relating to the management
+system in MiniPython the module provides functions relating to the management
 of the simple on-device persistent file system and information about the
 current system.
 
@@ -48,6 +48,6 @@ Functions
 
 .. note::
 
-    There is no underlying operating system in MicroPython. As a result the
+    There is no underlying operating system in MiniPython. As a result the
     information returned by the ``uname`` function is mostly useful for
     versioning details.

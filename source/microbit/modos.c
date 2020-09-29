@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -33,7 +33,7 @@
 
 #define MICROBIT_VERSION \
     "micro:bit v" MICROBIT_RELEASE "+" MICROBIT_GIT_HASH " on " MICROBIT_BUILD_DATE \
-    "; MicroPython " MICROPY_GIT_TAG " on " MICROPY_BUILD_DATE
+    "; MiniPython " MICROPY_GIT_TAG " on " MICROPY_BUILD_DATE
 
 const char microbit_release_string[] = MICROBIT_RELEASE;
 const char microbit_version_string[] = MICROBIT_VERSION;

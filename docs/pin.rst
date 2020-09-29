@@ -221,7 +221,7 @@ in ``read_digital`` mode with the given pull mode.
     GPIO pins are also used for the display. 6 of these are routed to the
     edge connector at 3, 4, 6, 7, 9. and 10. If you want to use these pins
     for another purpose, you may need to turn the `display off
-    <https://microbit-micropython.readthedocs.io/en/latest/display.html#microbit.display.off>`_.
+    <https://microbit-minipython.readthedocs.io/en/latest/display.html#microbit.display.off>`_.
 
     See the `edge connector data sheet
     <http://tech.microbit.org/hardware/edgeconnector_ds>`_.

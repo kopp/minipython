@@ -1,12 +1,12 @@
 Images
 ------
 
-MicroPython is about as good at art as you can be if the only thing you have is
+MiniPython is about as good at art as you can be if the only thing you have is
 a 5x5 grid of red LEDs (light emitting diodes - the things that light up on the
-front of the device). MicroPython gives you quite a lot of control over the
+front of the device). MiniPython gives you quite a lot of control over the
 display so you can create all sorts of interesting effects.
 
-MicroPython comes with lots of built-in pictures to show on the display.
+MiniPython comes with lots of built-in pictures to show on the display.
 For example, to make the device appear happy you type::
 
     from microbit import *
@@ -121,7 +121,7 @@ Animation
 +++++++++
 
 Static images are fun, but it's even more fun to make them move. This is also
-amazingly simple to do with MicroPython ~ just use a list of images!
+amazingly simple to do with MiniPython ~ just use a list of images!
 
 Here is a shopping list::
 
@@ -158,7 +158,7 @@ It's even possible to store different sorts of things in the same list::
 
 Notice that last item? It was an image!
 
-We can tell MicroPython to animate a list of images. Luckily we have a
+We can tell MiniPython to animate a list of images. Luckily we have a
 couple of lists of images already built in. They're called ``Image.ALL_CLOCKS``
 and ``Image.ALL_ARROWS``::
 
@@ -167,9 +167,9 @@ and ``Image.ALL_ARROWS``::
     display.show(Image.ALL_CLOCKS, loop=True, delay=100)
 
 As with a single image, we use ``display.show`` to show it on the
-device's display. However, we tell MicroPython to use ``Image.ALL_CLOCKS`` and
+device's display. However, we tell MiniPython to use ``Image.ALL_CLOCKS`` and
 it understands that it needs to show each image in the list, one after the
-other. We also tell MicroPython to keep looping over the list of images (so
+other. We also tell MiniPython to keep looping over the list of images (so
 the animation lasts forever) by saying ``loop=True``. Furthermore, we tell it
 that we want the delay between each image to be only 100 milliseconds (a tenth
 of a second) with the argument ``delay=100``.

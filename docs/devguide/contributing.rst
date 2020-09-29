@@ -1,7 +1,7 @@
 Contributing
 ------------
 
-Hey! Many thanks for wanting to improve MicroPython on the micro:bit.
+Hey! Many thanks for wanting to improve MiniPython on the micro:bit.
 
 Contributions are welcome without prejudice from *anyone* irrespective of
 age, gender, religion, race or sexuality. Good quality code and engagement

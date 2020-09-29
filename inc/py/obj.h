@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -31,7 +31,7 @@
 #include "py/qstr.h"
 #include "py/mpprint.h"
 
-// This is the definition of the opaque MicroPython object type.
+// This is the definition of the opaque MiniPython object type.
 // All concrete objects have an encoding within this type and the
 // particular encoding is specified by MICROPY_OBJ_REPR.
 #if MICROPY_OBJ_REPR == MICROPY_OBJ_REPR_D
@@ -42,11 +42,11 @@ typedef void *mp_obj_t;
 typedef const void *mp_const_obj_t;
 #endif
 
-// This mp_obj_type_t struct is a concrete MicroPython object which holds info
+// This mp_obj_type_t struct is a concrete MiniPython object which holds info
 // about a type.  See below for actual definition of the struct.
 typedef struct _mp_obj_type_t mp_obj_type_t;
 
-// Anything that wants to be a concrete MicroPython object must have mp_obj_base_t
+// Anything that wants to be a concrete MiniPython object must have mp_obj_base_t
 // as its first member (small ints, qstr objs and inline floats are not concrete).
 struct _mp_obj_base_t {
     const mp_obj_type_t *type MICROPY_OBJ_BASE_ALIGNMENT;
@@ -218,7 +218,7 @@ typedef union _mp_rom_obj_t { uint64_t u64; struct { const void *lo, *hi; } u32;
 #endif
 
 // Macros to convert between mp_obj_t and concrete object types.
-// These are identity operations in MicroPython, but ability to override
+// These are identity operations in MiniPython, but ability to override
 // these operations are provided to experiment with other methods of
 // object representation and memory management.
 

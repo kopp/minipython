@@ -5,7 +5,7 @@ Installation
 ============
 
 This section will help you set up the tools and programs needed for
-developing programs and firmware to flash to the BBC micro:bit using MicroPython.
+developing programs and firmware to flash to the BBC micro:bit using MiniPython.
 
 Dependencies
 ------------
@@ -66,7 +66,7 @@ Linux
 ~~~~~
 
 These steps will cover the basic flavors of Linux and working with the
-micro:bit and MicroPython. See also the specific sections for Raspberry Pi,
+micro:bit and MiniPython. See also the specific sections for Raspberry Pi,
 Debian/Ubuntu, and Red Hat Fedora/Centos.
 
 

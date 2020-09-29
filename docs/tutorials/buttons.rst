@@ -9,7 +9,7 @@ It's easy to remember: output is what the device puts out to the world
 whereas input is what goes into the device for it to process.
 
 The most obvious means of input on the micro:bit are its two buttons, labelled
-``A`` and ``B``. Somehow, we need MicroPython to react to button presses.
+``A`` and ``B``. Somehow, we need MiniPython to react to button presses.
 
 This is remarkably simple::
 
@@ -60,7 +60,7 @@ Finally, Python knows what to scroll across the display::
 
     display.scroll("10")
 
-While this might seem like a lot of work, MicroPython makes this happen
+While this might seem like a lot of work, MiniPython makes this happen
 extraordinarily fast.
 
 Event Loops
@@ -131,7 +131,7 @@ Try it!
 Handling an Event
 +++++++++++++++++
 
-If we want MicroPython to react to button press events we should put it into
+If we want MiniPython to react to button press events we should put it into
 an infinite loop and check if the button ``is_pressed``.
 
 An infinite loop is easy::

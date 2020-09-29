@@ -1,6 +1,6 @@
 
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -83,7 +83,7 @@ void antigravity(uint8_t interval = 200 /* ms */) {
     |                                                                |
     |                                                    \0/         |
     |                                                  /   \         |
-    |        You're flying!                  MicroPython!  /|        |
+    |        You're flying!                  MiniPython!  /|        |
     |            How?                                      \ \       |
     |            /                                                   |
     |          0                                                     |
@@ -98,7 +98,7 @@ void antigravity(uint8_t interval = 200 /* ms */) {
     "|\xc0 |\n"
     "|\xb4 \\0/\x89 |\n"
     "|\xb2 /\x83 \\\x89 |\n"
-    "|\x88 You're flying!\x92 MicroPython!  /|\x88 |\n"
+    "|\x88 You're flying!\x92 MiniPython!  /|\x88 |\n"
     "|\x8c How?\xa6 \\ \\\x87 |\n"
     "|\x8c /\xb3 |\n"
     "|\x8a 0\xb5 |\n"
@@ -113,7 +113,7 @@ void antigravity(uint8_t interval = 200 /* ms */) {
     |                                                                              |
     |                                                              \0/             |
     |                                                            /   \             |
-    |                 You're flying!                   MicroPython!  /|            |
+    |                 You're flying!                   MiniPython!  /|            |
     |                     How?                                       \ \           |
     |                     /                                                        |
     |                   0                                                          |
@@ -145,7 +145,7 @@ void antigravity(uint8_t interval = 200 /* ms */) {
     "|\xce |\n"
     "|\xbe \\0/\x8d |\n"
     "|\xbc /\x83 \\\x8d |\n"
-    "|\x91 You're flying!\x93 MicroPython!  /|\x8c |\n"
+    "|\x91 You're flying!\x93 MiniPython!  /|\x8c |\n"
     "|\x95 How?\xa7 \\ \\\x8b |\n"
     "|\x95 /\xb8 |\n"
     "|\x93 0\xba |\n"

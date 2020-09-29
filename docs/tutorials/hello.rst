@@ -6,7 +6,7 @@ computer to say, "Hello, World!".
 
 .. image:: ../scroll-hello.gif
 
-This is easy with MicroPython::
+This is easy with MiniPython::
 
     from microbit import *
     display.scroll("Hello, World!")
@@ -15,10 +15,10 @@ Each line does something special. The first line::
 
     from microbit import *
 
-...tells MicroPython to get all the stuff it needs to work with the BBC
+...tells MiniPython to get all the stuff it needs to work with the BBC
 micro:bit. All this stuff is in a module called ``microbit`` (a module
 is a library of pre-existing code). When you ``import`` something you're telling
-MicroPython that you want to use it, and ``*`` is Python's way to say
+MiniPython that you want to use it, and ``*`` is Python's way to say
 *everything*. So, ``from microbit import *`` means, in English, "I want to be
 able to use everything from the microbit code library".
 
@@ -26,7 +26,7 @@ The second line::
 
     display.scroll("Hello, World!")
 
-...tells MicroPython to use the display to scroll the string of characters
+...tells MiniPython to use the display to scroll the string of characters
 "Hello, World!". The ``display`` part of that line is an *object* from the
 ``microbit`` module that represents the device's physical display (we say
 "object" instead of "thingy", "whatsit" or "doodah"). We can tell the display
@@ -48,20 +48,20 @@ change the scroll method's argument.
 
     It may not work. :-)
 
-    This is where things get fun and MicroPython tries to be helpful. If
+    This is where things get fun and MiniPython tries to be helpful. If
     it encounters an error it will scroll a helpful message on the micro:bit's
     display. If it can, it will tell you the line number for where the error
     can be found.
 
     Python expects you to type **EXACTLY** the right thing. So, for instance,
     ``Microbit``, ``microbit`` and ``microBit`` are all different things to
-    Python. If MicroPython complains about a ``NameError`` it's probably
+    Python. If MiniPython complains about a ``NameError`` it's probably
     because you've typed something inaccurately. It's like the difference
     between referring to "Nicholas" and "Nicolas". They're two different people
     but their names look very similar.
 
-    If MicroPython complains about a ``SyntaxError`` you've simply typed code
-    in a way that MicroPython can't understand. Check you're not missing any
+    If MiniPython complains about a ``SyntaxError`` you've simply typed code
+    in a way that MiniPython can't understand. Check you're not missing any
     special characters like ``"`` or ``:``. It's like putting. a full stop in
     the middle of a sentence. It's hard to understand exactly what you mean.
 

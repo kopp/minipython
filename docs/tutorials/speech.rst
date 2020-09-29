@@ -126,7 +126,7 @@ Doctor went back in time to precisely the point between Davros's
 `unit tests <https://en.wikipedia.org/wiki/Unit_testing>`_
 passing and the
 `deployment pipeline <https://en.wikipedia.org/wiki/Continuous_delivery>`_
-kicking in. At this instant he was able to insert a MicroPython interpreter
+kicking in. At this instant he was able to insert a MiniPython interpreter
 into the DALEK operating system and the code you see above into the DALEK
 memory banks as a sort of long hidden Time-Lord
 `Easter Egg <https://en.wikipedia.org/wiki/Easter_egg_(media)>`_ or

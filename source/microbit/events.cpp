@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -32,22 +32,22 @@ extern "C" {
     extern void microbit_accelerometer_event_handler(const MicroBitEvent*);
 }
 
-class MicroPythonEventHandler : public EventModel {
+class MiniPythonEventHandler : public EventModel {
 public:
-    MicroPythonEventHandler();
+    MiniPythonEventHandler();
 
     virtual int send(MicroBitEvent evt);
 };
 
 // Create a static instance of our custom event handler
-static MicroPythonEventHandler event_handler;
+static MiniPythonEventHandler event_handler;
 
-MicroPythonEventHandler::MicroPythonEventHandler() {
+MiniPythonEventHandler::MiniPythonEventHandler() {
     // We take full control of the event bus
     EventModel::defaultEventBus = this;
 }
 
-int MicroPythonEventHandler::send(MicroBitEvent evt) {
+int MiniPythonEventHandler::send(MicroBitEvent evt) {
     // Dispatch the event to the relevant component
     switch (evt.source) {
         case MICROBIT_ID_GESTURE:

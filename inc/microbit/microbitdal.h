@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -30,9 +30,9 @@
 #include "MicroBitCompass.h"
 #include "MicroBitCompassCalibrator.h"
 
-class MicroPythonI2C : public MicroBitI2C {
+class MiniPythonI2C : public MicroBitI2C {
     public:
-        MicroPythonI2C(PinName sda, PinName scl)
+        MiniPythonI2C(PinName sda, PinName scl)
             : MicroBitI2C(sda, scl) {
         }
         void set_pins(PinName sda, PinName scl) {
@@ -44,7 +44,7 @@ class MicroPythonI2C : public MicroBitI2C {
         }
 };
 
-extern MicroPythonI2C ubit_i2c;
+extern MiniPythonI2C ubit_i2c;
 extern MicroBitAccelerometer *ubit_accelerometer;
 extern MicroBitDisplay ubit_display;
 extern MicroBitCompass *ubit_compass;

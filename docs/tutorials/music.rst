@@ -1,7 +1,7 @@
 Music
 -----
 
-MicroPython on the BBC micro:bit comes with a powerful music and sound module.
+MiniPython on the BBC micro:bit comes with a powerful music and sound module.
 It's very easy to generate bleeps and bloops from the device *if you attach a
 speaker*. Use crocodile clips to attach pin 0 and GND to the positive and
 negative inputs on the speaker - it doesn't matter which way round they are
@@ -23,7 +23,7 @@ Let's play some music::
 Notice that we import the ``music`` module. It contains methods used to make
 and control sound.
 
-MicroPython has quite a lot of built-in melodies. Here's a complete list:
+MiniPython has quite a lot of built-in melodies. Here's a complete list:
 
 * ``music.DADADADUM``
 * ``music.ENTERTAINER``
@@ -55,7 +55,7 @@ Wolfgang Amadeus Microbit
 
 Creating your own tunes is easy!
 
-Each note has a name (like ``C#`` or ``F``), an octave (telling MicroPython how
+Each note has a name (like ``C#`` or ``F``), an octave (telling MiniPython how
 high or low the note should be played) and a duration (how
 long it lasts through time). Octaves are indicated by a number ~ 0 is the
 lowest octave, 4 contains middle C and 8 is about as high as you'll ever need
@@ -63,7 +63,7 @@ unless you're making music for dogs. Durations are also expressed as numbers.
 The higher the value of the duration the longer it will last. Such
 values are related to each other - for instance, a duration of ``4`` will last
 twice as long as a duration ``2`` (and so on). If you use the note name ``R``
-then MicroPython will play a rest (i.e. silence) for the specified duration.
+then MMiniPython will play a rest (i.e. silence) for the specified duration.
 
 Each note is expressed as a string of characters like this::
 
@@ -73,7 +73,7 @@ For example, ``"A1:4"`` refers to the note named ``A`` in octave number ``1``
 to be played for a duration of ``4``.
 
 Make a list of notes to create a melody (it's equivalent to creating an
-animation with a list of images). For example, here's how to make MicroPython
+animation with a list of images). For example, here's how to make MiniPython
 play opening of "Frere Jaques"::
 
     import music
@@ -84,7 +84,7 @@ play opening of "Frere Jaques"::
 
 .. note::
 
-    MicroPython helps you to simplify such melodies. It'll remember the octave
+    MiniPython helps you to simplify such melodies. It'll remember the octave
     and duration values until you next change them. As a result, the example
     above can be re-written as::
 
@@ -100,7 +100,7 @@ play opening of "Frere Jaques"::
 Sound Effects
 +++++++++++++
 
-MicroPython lets you make tones that are not musical notes. For example, here's
+MiniPython lets you make tones that are not musical notes. For example, here's
 how to create a Police siren effect::
 
     import music

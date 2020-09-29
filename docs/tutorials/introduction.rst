@@ -45,23 +45,23 @@ Put simply, if you teach or learn Python, you are developing a highly valuable
 skill that applies to all areas of human endeavour.
 
 One such area is the BBC's amazing micro:bit device. It runs a version of
-Python called MicroPython that's designed to run on small computers like the BBC
+Python called MiniPython that's designed to run on small computers like the BBC
 micro:bit. It's a full implementation of Python 3 so when you move onto other
 things (such as programming Python on a Raspberry Pi) you'll use exactly the
 same language.
 
-MicroPython does not include all the standard code libraries that come with
+MiniPython does not include all the standard code libraries that come with
 "regular" Python. However, we have created a special ``microbit`` module in
-MicroPython that lets you control the device.
+MiniPython that lets you control the device.
 
-Python and MicroPython are free software. Not only does this mean you don't pay
+Python and MiniPython are free software. Not only does this mean you don't pay
 anything to use Python, but you are also free to contribute back to the Python
 community. This may be in the form of code, documentation, bug reports, running
 a community group or writing tutorials (like this one). In fact, all the Python
 related resources for the BBC micro:bit have been created by an international
 team of volunteers working in their free time.
 
-These lessons introduce MicroPython and the BBC
+These lessons introduce MiniPython and the BBC
 micro:bit in easy-to-follow steps. Feel free to adopt and adapt them for
 classroom based lessons, or perhaps just follow them on your own at home.
 
@@ -73,7 +73,7 @@ how good software developers learn**. Those of us who work as software
 developers have a lot of fun tracking down bugs and avoiding the repetition of
 mistakes.
 
-If in doubt, remember the Zen of MicroPython::
+If in doubt, remember the Zen of MiniPython::
 
     Code,
     Hack it,
@@ -82,7 +82,7 @@ If in doubt, remember the Zen of MicroPython::
     Small is beautiful,
 
     Be brave! Break things! Learn and have fun!
-    Express yourself with MicroPython.
+    Express yourself with MiniPython.
 
     Happy hacking! :-)
 

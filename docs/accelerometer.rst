@@ -8,8 +8,8 @@ also provides convenience functions for detecting gestures. The
 recognised gestures are: ``up``, ``down``, ``left``, ``right``, ``face up``,
 ``face down``, ``freefall``, ``3g``, ``6g``, ``8g``, ``shake``.
 
-By default MicroPython sets the accelerometer range to +/- 2g, changing the
-accelerometer range is currently not possible in MicroPython.
+By default MiniPython sets the accelerometer range to +/- 2g, changing the
+accelerometer range is currently not possible in MiniPython.
 The accelerometer returns a value in the range 0..1024 for each axis, which is
 then scaled accordingly.
 
@@ -50,7 +50,7 @@ Functions
 
 .. note::
 
-    MicroPython understands the following gesture names: ``"up"``, ``"down"``,
+    MiniPython understands the following gesture names: ``"up"``, ``"down"``,
     ``"left"``, ``"right"``, ``"face up"``, ``"face down"``, ``"freefall"``,
     ``"3g"``, ``"6g"``, ``"8g"``, ``"shake"``. Gestures are always
     represented as strings.

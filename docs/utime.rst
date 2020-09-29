@@ -1,10 +1,10 @@
 ..
-   MicroPython license information
-   ===============================
+   MiniPython license information
+   ==============================
 
    The MIT License (MIT)
 
-   Copyright (c) 2013-2017 Damien P. George, and others
+   Copyright (c) 2020 My Techno Talent, LLC, and others
 
    Permission is hereby granted, free of charge, to any person obtaining a copy
    of this software and associated documentation files (the "Software"), to deal
@@ -34,7 +34,7 @@ The ``utime`` module provides functions for getting the current time and date,
 measuring time intervals, and for delays.
 
 .. note::
-    The ``utime`` module is a MicroPython implementation of the standard Python 
+    The ``utime`` module is a MiniPython implementation of the standard Python 
     ``time`` module. It can be imported using both ``import utime`` and 
     ``import time``, but the module is the same.
 

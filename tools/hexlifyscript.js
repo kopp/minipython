@@ -1,6 +1,6 @@
 /*
 Turn a Python script into Intel HEX format to be concatenated at the
-end of the MicroPython firmware.hex.  A simple header is added to the
+end of the MiniPython firmware.hex.  A simple header is added to the
 script.
 
 To execute from command line: node hexlifyscript.js <script.py>

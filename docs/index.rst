@@ -10,7 +10,7 @@ Welcome!
 
 The BBC micro:bit is a small computing device for children. One of the
 languages it understands is the popular Python programming language. The
-version of Python that runs on the BBC micro:bit is called MicroPython 
+version of Python that runs on the BBC micro:bit derives from MicroPython 
 as MiniPython is an updated modification with additional features.
 
 This documentation includes lessons for teachers
@@ -29,7 +29,7 @@ If you're a new programmer, teacher or unsure where to start, begin with the tut
 
 Projects related to MiniPython on the BBC micro:bit include:
 
-* `Mu <https://github.com/ntoll/mu>`_ - a simple code editor for kids, teachers and beginner programmers. Probably the easiest way for people to program MicroPython on the BBC micro:bit.
+* `Mu <https://github.com/ntoll/mu>`_ - a simple code editor for kids, teachers and beginner programmers. Probably the easiest way for people to program MiniPython on the BBC micro:bit.
 * `uFlash <https://uflash.readthedocs.io/en/latest/>`_ - a command line tool for flashing raw Python scripts onto a BBC micro:bit.
 
 .. toctree::
@@ -56,7 +56,7 @@ Projects related to MiniPython on the BBC micro:bit include:
    :maxdepth: 2
    :caption: API Reference
 
-   microbit_micropython_api.rst
+   microbit_minipython_api.rst
    microbit.rst
    accelerometer.rst
    audio.rst
@@ -68,7 +68,7 @@ Projects related to MiniPython on the BBC micro:bit include:
    i2c.rst
    image.rst
    machine.rst
-   micropython.rst
+   minipython.rst
    music.rst
    neopixel.rst
    os.rst

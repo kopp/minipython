@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -41,7 +41,7 @@ void mp_hal_erase_line_from_cursor(unsigned int n_chars);
 
 void mp_hal_display_string(const char*);
 
-// MicroPython low-level C API for pins
+// MiniPython low-level C API for pins
 #include "nrf_gpio.h"
 #include "microbit/modmicrobit.h"
 #define mp_hal_pin_obj_t uint8_t

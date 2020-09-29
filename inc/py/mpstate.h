@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -36,7 +36,7 @@
 #include "py/objlist.h"
 #include "py/objexcept.h"
 
-// This file contains structures defining the state of the MicroPython
+// This file contains structures defining the state of the MiniPython
 // memory system, runtime and virtual machine.  The state is a global
 // variable, but in the future it is hoped that the state can become local.
 

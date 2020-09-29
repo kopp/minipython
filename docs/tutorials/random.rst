@@ -4,7 +4,7 @@ Random
 Sometimes you want to leave things to chance, or mix it up a little: you want
 the device to act randomly.
 
-MicroPython comes with a ``random`` module to make it easy to introduce chance
+MiniPython comes with a ``random`` module to make it easy to introduce chance
 and a little chaos into your code. For example, here's how to scroll a random
 name across the display::
 
@@ -29,7 +29,7 @@ Random Numbers
 Random numbers are very useful. They're common in games. Why else do we have
 dice?
 
-MicroPython comes with several useful random number methods. Here's how to
+MiniPython comes with several useful random number methods. Here's how to
 make a simple dice::
 
     from microbit import *

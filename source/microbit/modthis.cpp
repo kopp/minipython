@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -33,7 +33,7 @@ extern "C" {
 
 STATIC mp_obj_t this__init__(void) {
     STATIC const char *this_text =
-"The Zen of MicroPython, by Nicholas H. Tollervey\n"
+"The Zen of MiniPython, by Nicholas H. Tollervey\n"
 "\n"
 "Code,\n"
 "Hack it,\n"
@@ -42,7 +42,7 @@ STATIC mp_obj_t this__init__(void) {
 "Small is beautiful,\n"
 "\n"
 "Be brave! Break things! Learn and have fun!\n"
-"Express yourself with MicroPython.\n"
+"Express yourself with MiniPython.\n"
 "\n"
 "Happy hacking! :-)\n";
     mp_printf(&mp_plat_print, "%s", this_text);
@@ -55,7 +55,7 @@ STATIC mp_obj_t this_authors(void) {
     If you contribute code to this project, add your name here.
     */
     STATIC const char *authors_text =
-"MicroPython on the micro:bit is brought to you by:\n"
+"MiniPython on the micro:bit is brought to you by:\n"
 "Damien P. George, Mark Shannon, Radomir Dopieralski, Matthew Else,\n"
 "Carol Willing, Tom Viner, Alan Jackson, Nick Coghlan, Joseph Haig,\n"
 "Alex Chan, Andrea Grandi, Paul Egan, Piotr Kasprzyk, Andrew Mulholland,\n"

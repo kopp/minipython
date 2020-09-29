@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -26,7 +26,7 @@
 #ifndef MICROPY_INCLUDED_PY_MPCONFIG_H
 #define MICROPY_INCLUDED_PY_MPCONFIG_H
 
-// This file contains default configuration settings for MicroPython.
+// This file contains default configuration settings for MiniPython.
 // You can override any of the options below using mpconfigport.h file
 // located in a directory of your port.
 
@@ -34,7 +34,7 @@
 // particular port. mpconfigport.h is actually a default name for
 // such config, and it can be overridden using MP_CONFIGFILE preprocessor
 // define (you can do that by passing CFLAGS_EXTRA='-DMP_CONFIGFILE="<file.h>"'
-// argument to make when using standard MicroPython makefiles).
+// argument to make when using standard MiniPython makefiles).
 // This is useful to have more than one config per port, for example,
 // release vs debug configs, etc. Note that if you switch from one config
 // to another, you must rebuild from scratch using "-B" switch to make.
@@ -51,19 +51,19 @@
 /*****************************************************************************/
 /* Object representation                                                     */
 
-// A MicroPython object is a machine word having the following form:
+// A MiniPython object is a machine word having the following form:
 //  - xxxx...xxx1 : a small int, bits 1 and above are the value
 //  - xxxx...xx10 : a qstr, bits 2 and above are the value
 //  - xxxx...xx00 : a pointer to an mp_obj_base_t (unless a fake object)
 #define MICROPY_OBJ_REPR_A (0)
 
-// A MicroPython object is a machine word having the following form:
+// A MiniPython object is a machine word having the following form:
 //  - xxxx...xx01 : a small int, bits 2 and above are the value
 //  - xxxx...xx11 : a qstr, bits 2 and above are the value
 //  - xxxx...xxx0 : a pointer to an mp_obj_base_t (unless a fake object)
 #define MICROPY_OBJ_REPR_B (1)
 
-// A MicroPython object is a machine word having the following form (called R):
+// A MiniPython object is a machine word having the following form (called R):
 //  - iiiiiiii iiiiiiii iiiiiiii iiiiiii1 small int with 31-bit signed value
 //  - 01111111 1qqqqqqq qqqqqqqq qqqqq110 str with 20-bit qstr value
 //  - s1111111 10000000 00000000 00000010 +/- inf
@@ -75,7 +75,7 @@
 // This scheme only works with 32-bit word size and float enabled.
 #define MICROPY_OBJ_REPR_C (2)
 
-// A MicroPython object is a 64-bit word having the following form (called R):
+// A MiniPython object is a 64-bit word having the following form (called R):
 //  - seeeeeee eeeeffff ffffffff ffffffff ffffffff ffffffff ffffffff ffffffff 64-bit fp, e != 0x7ff
 //  - s1111111 11110000 00000000 00000000 00000000 00000000 00000000 00000000 +/- inf
 //  - 01111111 11111000 00000000 00000000 00000000 00000000 00000000 00000000 normalised nan
@@ -234,7 +234,7 @@
 #endif
 
 /*****************************************************************************/
-/* MicroPython emitters                                                     */
+/* MiniPython emitters                                                     */
 
 // Whether to support loading of persistent code
 #ifndef MICROPY_PERSISTENT_CODE_LOAD
@@ -463,7 +463,7 @@
 #   endif
 #endif
 
-// Whether to provide the mp_kbd_exception object, and micropython.kbd_intr function
+// Whether to provide the mp_kbd_exception object, and minipython.kbd_intr function
 #ifndef MICROPY_KBD_EXCEPTION
 #define MICROPY_KBD_EXCEPTION (0)
 #endif
@@ -582,7 +582,7 @@ typedef double mp_float_t;
 
 // Perform full checks as done by CPython. Disabling this
 // may produce incorrect results, if incorrect data is fed,
-// but should not lead to MicroPython crashes or similar
+// but should not lead to MiniPython crashes or similar
 // grave issues (in other words, only user app should be,
 // affected, not system).
 #ifndef MICROPY_FULL_CHECKS
@@ -595,7 +595,7 @@ typedef double mp_float_t;
 #endif
 
 // Whether to provide stream functions with POSIX-like signatures
-// (useful for porting existing libraries to MicroPython).
+// (useful for porting existing libraries to MiniPython).
 #ifndef MICROPY_STREAMS_POSIX_API
 #define MICROPY_STREAMS_POSIX_API (0)
 #endif
@@ -840,7 +840,7 @@ typedef double mp_float_t;
 #define MICROPY_PY___FILE__ (1)
 #endif
 
-// Whether to provide mem-info related functions in micropython module
+// Whether to provide mem-info related functions in minipython module
 #ifndef MICROPY_PY_MICROPYTHON_MEM_INFO
 #define MICROPY_PY_MICROPYTHON_MEM_INFO (0)
 #endif
@@ -858,7 +858,7 @@ typedef double mp_float_t;
 #define MICROPY_PY_ARRAY_SLICE_ASSIGN (0)
 #endif
 
-// Whether to support attrtuple type (MicroPython extension)
+// Whether to support attrtuple type (MiniPython extension)
 // It provides space-efficient tuples with attribute access
 #ifndef MICROPY_PY_ATTRTUPLE
 #define MICROPY_PY_ATTRTUPLE (1)

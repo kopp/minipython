@@ -1,10 +1,10 @@
 ..
-   MicroPython license information
-   ===============================
+   MiniPython license information
+   ==============================
 
    The MIT License (MIT)
 
-   Copyright (c) 2013-2017 Damien P. George, and others
+   Copyright (c) 2020 My Techno Talent, LLC, and others
 
    Permission is hereby granted, free of charge, to any person obtaining a copy
    of this software and associated documentation files (the "Software"), to deal
@@ -25,24 +25,24 @@
    THE SOFTWARE.
 
 
-MicroPython
-***********
+MiniPython
+**********
 
-.. py:module:: micropython
+.. py:module:: minipython
 
-Access and control MicroPython internals.
+Access and control MiniPython internals.
 
 Functions
 =========
 
-.. py:function:: micropython.const(expr)
+.. py:function:: minipython.const(expr)
 
     Used to declare that the expression is a constant so that the compiler can 
     optimise it. The use of this function should be as follows:
 
     .. code-block:: python
 
-        from micropython import const
+        from minipython import const
         CONST_X = const(123)
         CONST_Y = const(2 * CONST_X + 1)
 
@@ -52,7 +52,7 @@ Functions
     global variable, and does not take up any memory during execution.
 
 
-.. py:function:: micropython.opt_level([level])
+.. py:function:: minipython.opt_level([level])
 
     If level is given then this function sets the optimisation level for 
     subsequent compilation of scripts, and returns None. Otherwise it returns 
@@ -74,13 +74,13 @@ Functions
     The default optimisation level is usually level 0.
 
 
-.. py:function:: micropython.mem_info([verbose])
+.. py:function:: minipython.mem_info([verbose])
 
     Print information about currently used memory. If the verbose argument is 
     given then extra information is printed.
 
 
-.. py:function:: micropython.qstr_info([verbose])
+.. py:function:: minipython.qstr_info([verbose])
 
     Print information about currently interned strings. If the verbose argument
     is given then extra information is printed.
@@ -89,23 +89,23 @@ Functions
     use. In verbose mode it prints out the names of all RAM-interned strings.
 
 
-.. py:function:: micropython.stack_use()
+.. py:function:: minipython.stack_use()
 
     Return an integer representing the current amount of stack that is being 
     used. The absolute value of this is not particularly useful, rather it 
     should be used to compute differences in stack usage at different points.
 
 
-.. py:function:: micropython.heap_lock()
+.. py:function:: minipython.heap_lock()
 
 
-.. py:function:: micropython.heap_unlock()
+.. py:function:: minipython.heap_unlock()
 
     Lock or unlock the heap. When locked no memory allocation can occur and a 
     ``MemoryError`` will be raised if any heap allocation is attempted.
 
 
-.. py:function:: micropython.kbd_intr(chr)
+.. py:function:: minipython.kbd_intr(chr)
 
     Set the character that will raise a KeyboardInterrupt exception. By default
     this is set to 3 during script execution, corresponding to Ctrl-C. Passing 

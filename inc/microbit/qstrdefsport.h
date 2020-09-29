@@ -419,7 +419,7 @@ Q(name)
 
 Q(os)
 Q(uname)
-Q(micropython)
+Q(minipython)
 Q(sysname)
 Q(nodename)
 Q(release)

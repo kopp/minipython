@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -76,7 +76,7 @@ STATIC mp_uint_t bufwriter_write(mp_obj_t self_in, const void *buf, mp_uint_t si
         // entire block to it. memcpy below is not ideal and could be optimized
         // in some cases. But the way it is now it at least ensures that buffer
         // is word-aligned, to guard against obscure cases when it matters, e.g.
-        // https://github.com/micropython/micropython/issues/1863
+        // https://github.com/minipython/minipython/issues/1863
         memcpy(self->buf + self->len, buf, rem);
         buf = (byte*)buf + rem;
         size -= rem;

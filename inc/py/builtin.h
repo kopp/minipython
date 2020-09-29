@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -30,7 +30,7 @@
 
 mp_obj_t mp_builtin___import__(size_t n_args, const mp_obj_t *args);
 mp_obj_t mp_builtin_open(size_t n_args, const mp_obj_t *args, mp_map_t *kwargs);
-mp_obj_t mp_micropython_mem_info(size_t n_args, const mp_obj_t *args);
+mp_obj_t mp_minipython_mem_info(size_t n_args, const mp_obj_t *args);
 
 MP_DECLARE_CONST_FUN_OBJ_VAR(mp_builtin___build_class___obj);
 MP_DECLARE_CONST_FUN_OBJ_VAR_BETWEEN(mp_builtin___import___obj);
@@ -90,7 +90,7 @@ extern const mp_obj_module_t mp_module_collections;
 extern const mp_obj_module_t mp_module_io;
 extern const mp_obj_module_t mp_module_math;
 extern const mp_obj_module_t mp_module_cmath;
-extern const mp_obj_module_t mp_module_micropython;
+extern const mp_obj_module_t mp_module_minipython;
 extern const mp_obj_module_t mp_module_ustruct;
 extern const mp_obj_module_t mp_module_sys;
 extern const mp_obj_module_t mp_module_gc;

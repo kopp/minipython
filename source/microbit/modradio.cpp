@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -306,7 +306,7 @@ static mp_obj_t radio_receive(uint8_t *header, mp_buffer_info_t *bufinfo, uint32
 }
 
 /*****************************************************************************/
-// MicroPython bindings and module
+// MiniPython bindings and module
 
 STATIC mp_obj_t mod_radio_reset(void) {
     radio_state.max_payload = RADIO_DEFAULT_MAX_PAYLOAD;

@@ -1,5 +1,5 @@
 /*
- * This file is part of the MicroPython project, http://micropython.org/
+ * This file is part of the MiniPython project, http://minipython.org/
  *
  * The MIT License (MIT)
  *
@@ -26,7 +26,7 @@
 #ifndef MICROPY_INCLUDED_PY_BC0_H
 #define MICROPY_INCLUDED_PY_BC0_H
 
-// MicroPython byte-codes.
+// MiniPython byte-codes.
 // The comment at the end of the line (if it exists) tells the arguments to the byte-code.
 
 #define MP_BC_LOAD_CONST_FALSE   (0x10)
