@@ -1,5 +1,5 @@
-MicroPython for the BBC micro:bit
-=================================
+MiniPython for the BBC micro:bit
+================================
 
 This is the source code for MicroPython running on the BBC micro:bit!
 
