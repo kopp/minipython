@@ -3,7 +3,7 @@
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2013, 2014 Damien P. George
+ * Copyright (c) 2020 Kevin Thomas
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -308,7 +308,7 @@ void qstr_pool_info(size_t *n_pool, size_t *n_qstr, size_t *n_str_data_bytes, si
     QSTR_EXIT();
 }
 
-#if MICROPY_PY_MICROPYTHON_MEM_INFO
+#if MICROPY_PY_MINIPYTHON_MEM_INFO
 void qstr_dump_data(void) {
     QSTR_ENTER();
     for (qstr_pool_t *pool = MP_STATE_VM(last_pool); pool != NULL && pool != &CONST_POOL; pool = pool->prev) {

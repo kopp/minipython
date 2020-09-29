@@ -3,7 +3,7 @@
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2013, 2014 Damien P. George
+ * Copyright (c) 2020 Kevin Thomas
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -841,8 +841,8 @@ typedef double mp_float_t;
 #endif
 
 // Whether to provide mem-info related functions in minipython module
-#ifndef MICROPY_PY_MICROPYTHON_MEM_INFO
-#define MICROPY_PY_MICROPYTHON_MEM_INFO (0)
+#ifndef MICROPY_PY_MINIPYTHON_MEM_INFO
+#define MICROPY_PY_MINIPYTHON_MEM_INFO (0)
 #endif
 
 // Whether to provide "array" module. Note that large chunk of the

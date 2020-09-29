@@ -3,7 +3,7 @@
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2014-2017 Damien P. George
+ * Copyright (c) 2014-2017 Kevin Thomas
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -81,7 +81,7 @@
 #define MICROPY_PY_BUILTINS_HELP_TEXT microbit_help_text
 #define MICROPY_PY_BUILTINS_HELP_MODULES (1)
 #define MICROPY_PY___FILE__         (0)
-#define MICROPY_PY_MICROPYTHON_MEM_INFO (1)
+#define MICROPY_PY_MINIPYTHON_MEM_INFO (1)
 #define MICROPY_PY_GC               (1)
 #define MICROPY_PY_ARRAY            (1)
 #define MICROPY_PY_ATTRTUPLE        (1)

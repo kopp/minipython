@@ -2,7 +2,7 @@
     music.py
     ~~~~~~~~
 
-    Plays a simple tune using the Micropython music module.
+    Plays a simple tune using the MiniPython music module.
     This example requires a speaker/buzzer/headphones connected to P0 and GND.
 """
 from microbit import *

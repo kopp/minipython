@@ -3,7 +3,7 @@
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2015 Damien P. George
+ * Copyright (c) 2015 Kevin Thomas
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -33,7 +33,7 @@ extern "C" {
 
 STATIC mp_obj_t this__init__(void) {
     STATIC const char *this_text =
-"The Zen of MiniPython, by Nicholas H. Tollervey\n"
+"The Zen of MiniPython, by Kevin Thomas based on the original from Nicholas H. Tollervey\n"
 "\n"
 "Code,\n"
 "Hack it,\n"
@@ -42,6 +42,7 @@ STATIC mp_obj_t this__init__(void) {
 "Small is beautiful,\n"
 "\n"
 "Be brave! Break things! Learn and have fun!\n"
+"If at first you do not succeed, try, try till you die!\n"
 "Express yourself with MiniPython.\n"
 "\n"
 "Happy hacking! :-)\n";
@@ -56,10 +57,7 @@ STATIC mp_obj_t this_authors(void) {
     */
     STATIC const char *authors_text =
 "MiniPython on the micro:bit is brought to you by:\n"
-"Damien P. George, Mark Shannon, Radomir Dopieralski, Matthew Else,\n"
-"Carol Willing, Tom Viner, Alan Jackson, Nick Coghlan, Joseph Haig,\n"
-"Alex Chan, Andrea Grandi, Paul Egan, Piotr Kasprzyk, Andrew Mulholland,\n"
-"Matt Wheeler, Joe Glancy, Abbie Brooks and Nicholas H. Tollervey.\n";
+"Kevin Thomas.\n";
     mp_printf(&mp_plat_print, "%s", authors_text);
     return mp_const_none;
 }

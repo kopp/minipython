@@ -7,7 +7,7 @@
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2015 Damien P. George
+ * Copyright (c) 2015 Kevin Thomas
  * Copyright (c) 2015 Nicholas H. Tollervey
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy

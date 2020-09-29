@@ -4,7 +4,7 @@
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2015 Damien P. George
+ * Copyright (c) 2015 Kevin Thomas
  * Copyright (c) 2016 Joe Glancy
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy

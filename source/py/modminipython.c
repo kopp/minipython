@@ -3,7 +3,7 @@
  *
  * The MIT License (MIT)
  *
- * Copyright (c) 2013, 2014 Damien P. George
+ * Copyright (c) 2020 My Techno Talent, LLC
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -46,7 +46,7 @@ STATIC mp_obj_t mp_minipython_opt_level(size_t n_args, const mp_obj_t *args) {
 }
 STATIC MP_DEFINE_CONST_FUN_OBJ_VAR_BETWEEN(mp_minipython_opt_level_obj, 0, 1, mp_minipython_opt_level);
 
-#if MICROPY_PY_MICROPYTHON_MEM_INFO
+#if MICROPY_PY_MINIPYTHON_MEM_INFO
 
 #if MICROPY_MEM_STATS
 STATIC mp_obj_t mp_minipython_mem_total(void) {
@@ -111,7 +111,7 @@ STATIC mp_obj_t mp_minipython_stack_use(void) {
 STATIC MP_DEFINE_CONST_FUN_OBJ_0(mp_minipython_stack_use_obj, mp_minipython_stack_use);
 #endif
 
-#endif // MICROPY_PY_MICROPYTHON_MEM_INFO
+#endif // MICROPY_PY_MINIPYTHON_MEM_INFO
 
 #if MICROPY_ENABLE_GC
 STATIC mp_obj_t mp_minipython_heap_lock(void) {
@@ -153,7 +153,7 @@ STATIC const mp_rom_map_elem_t mp_module_minipython_globals_table[] = {
     { MP_ROM_QSTR(MP_QSTR___name__), MP_ROM_QSTR(MP_QSTR_minipython) },
     { MP_ROM_QSTR(MP_QSTR_const), MP_ROM_PTR(&mp_identity_obj) },
     { MP_ROM_QSTR(MP_QSTR_opt_level), MP_ROM_PTR(&mp_minipython_opt_level_obj) },
-#if MICROPY_PY_MICROPYTHON_MEM_INFO
+#if MICROPY_PY_MINIPYTHON_MEM_INFO
 #if MICROPY_MEM_STATS
     { MP_ROM_QSTR(MP_QSTR_mem_total), MP_ROM_PTR(&mp_minipython_mem_total_obj) },
     { MP_ROM_QSTR(MP_QSTR_mem_current), MP_ROM_PTR(&mp_minipython_mem_current_obj) },
