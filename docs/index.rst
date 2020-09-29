@@ -1,20 +1,21 @@
-.. BBC Microbit Micropython documentation master file, created by
+.. BBC Microbit MiniPython documentation master file, created by
    sphinx-quickstart on Tue Oct 20 10:41:30 2015.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-BBC micro:bit MicroPython documentation
+BBC micro:bit MiniPython documentation
 =======================================
 
 Welcome!
 
 The BBC micro:bit is a small computing device for children. One of the
 languages it understands is the popular Python programming language. The
-version of Python that runs on the BBC micro:bit is called MicroPython.
+version of Python that runs on the BBC micro:bit is called MicroPython 
+as MiniPython is an updated modification with additional features.
 
 This documentation includes lessons for teachers
 and API documentation for developers (check out the index on the left). We hope
-you enjoy developing for the BBC micro:bit using MicroPython.
+you enjoy developing for the BBC micro:bit using MiniPython.
 
 If you're a new programmer, teacher or unsure where to start, begin with the tutorials.
 
@@ -26,7 +27,7 @@ If you're a new programmer, teacher or unsure where to start, begin with the tut
     developers by adding tips, how-tos, and Q&A to this document.
     Thanks!
 
-Projects related to MicroPython on the BBC micro:bit include:
+Projects related to MiniPython on the BBC micro:bit include:
 
 * `Mu <https://github.com/ntoll/mu>`_ - a simple code editor for kids, teachers and beginner programmers. Probably the easiest way for people to program MicroPython on the BBC micro:bit.
 * `uFlash <https://uflash.readthedocs.io/en/latest/>`_ - a command line tool for flashing raw Python scripts onto a BBC micro:bit.
