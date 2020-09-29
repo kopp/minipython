@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# BBC Microbit Micropython documentation build configuration file, created by
+# MiniPython documentation build configuration file, created by
 # sphinx-quickstart on Tue Oct 20 10:41:30 2015.
 #
 # This file is execfile()d with the current directory set to its
@@ -52,8 +52,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'BBC micro:bit MicroPython'
-copyright = u'2015-2016, Multiple authors'
+project = u'MiniPython'
+copyright = u'2020, My Techno Talent, LLC'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -188,7 +188,7 @@ pygments_style = 'sphinx'
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'BBCMicrobitMicropythondoc'
+htmlhelp_basename = 'MiniPythondoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -208,7 +208,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'BBCMicrobitMicropython.tex', u'BBC micro:bit MicroPython Documentation',
+  ('index', 'MiniPython.tex', u'MiniPython Documentation',
    u'Multiple authors', 'manual'),
 ]
 
@@ -238,7 +238,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'bbcmicrobitmicropython', u'BBC Microbit Micropython Documentation',
+    ('index', 'minipython', u'MiniPython Documentation',
      [u'Multiple authors'], 1)
 ]
 
@@ -252,8 +252,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'BBCMicrobitMicropython', u'BBC micro:bit MicroPython Documentation',
-   u'Multiple authors', 'BBCMicrobitMicropython', 'One line description of project.',
+  ('index', 'MiniPython', u'MiniPython Documentation',
+   u'Multiple authors', 'MiniPython', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -273,13 +273,13 @@ texinfo_documents = [
 # -- Options for Epub output ----------------------------------------------
 
 # Bibliographic Dublin Core info.
-epub_title = u'BBC Microbit Micropython'
+epub_title = u'MiniPython'
 epub_author = u'Multiple authors'
 epub_publisher = u'Multiple authors'
-epub_copyright = u'2015, Multiple authors'
+epub_copyright = u'2020, MyTechnoTalent, LLC'
 
 # The basename for the epub file. It defaults to the project name.
-#epub_basename = u'BBC Microbit Micropython'
+#epub_basename = u'MiniPython'
 
 # The HTML theme for the epub output. Since the default themes are not optimized
 # for small screen space, using the same theme for HTML and epub output is

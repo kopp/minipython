@@ -1,4 +1,4 @@
-.. BBC Microbit MiniPython documentation master file, created by
+.. MiniPython documentation master file, created by
    sphinx-quickstart on Tue Oct 20 10:41:30 2015.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.

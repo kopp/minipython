@@ -70,7 +70,7 @@ Tab completion works and is very useful!
 
 Read our documentation here:
 
-https://microbit-micropython.readthedocs.io/en/latest/
+https://minipython.readthedocs.io/en/latest/
 
 You can also use the tools/pyboard.py script to run Python scripts directly
 from your PC, eg:

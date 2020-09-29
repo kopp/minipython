@@ -1,11 +1,11 @@
 {
-  "name": "microbit-micropython",
-  "version": "1.0.1",
+  "name": "minipython",
+  "version": "1.0.0",
   "license": "MIT",
   "description": "MicroPython port to the BBC micro:bit",
-  "keywords": ["mbed-classic", "microbit", "runtime", "library", "micropython"],
-  "author": "Damien P George <damien.p.george@gmail.com>",
-  "homepage": "http://micropython.org",
+  "keywords": ["mbed-classic", "microbit", "runtime", "library", "micropython", "minipython"],
+  "author": "Kevin Thomas <kevin@mytechnotalent.com>",
+  "homepage": "http://minipython.org",
   "dependencies":{
     "microbit-dal":"lancaster-university/microbit-dal#v2.1.1"
   },
