@@ -1,5 +1,5 @@
-micro:bit Micropython API
-*************************
+micro:bit MiniPython API
+************************
 
 The microbit module
 ===================
