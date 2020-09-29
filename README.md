@@ -1,7 +1,7 @@
 MiniPython for the BBC micro:bit
 ================================
 
-This is the source code for MicroPython running on the BBC micro:bit!
+This is the source code for MiniPython running on the BBC micro:bit with additional features based on the MicroPython for the BBC micro:bit!
 
 To get involved with the micro:bit community join the Slack channel by signing up here:
 https://tech.microbit.org/get-involved/where-to-find/
@@ -10,6 +10,7 @@ Various things are in this repository, including:
 - Source code in source/ and inc/ directories.
 - Example Python programs in the examples/ directory.
 - Tools in the tools/ directory.
+- Integrated Friend module chatbot.
 
 The source code is a yotta application and needs yotta to build, along
 with an ARM compiler toolchain (eg arm-none-eabi-gcc and friends).
