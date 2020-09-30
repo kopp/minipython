@@ -51,6 +51,7 @@ Projects related to MiniPython on the BBC micro:bit include:
     tutorials/network
     tutorials/radio
     tutorials/next
+    tutorials/modules
 
 .. toctree::
    :maxdepth: 2
