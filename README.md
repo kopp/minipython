@@ -1,3 +1,5 @@
+![image](https://github.com/mytechnotalent/minipython/blob/master/MiniPython.png?raw=true)
+
 MiniPython for the BBC micro:bit
 ================================
 
