@@ -3,9 +3,31 @@
 MiniPython for the BBC micro:bit
 ================================
 
-This is the source code for MiniPython running on the BBC micro:bit with additional features based on the original MicroPython version for the BBC micro:bit!
+This is the source code for MiniPython running on the BBC micro:bit with
+additional features based on
+[the original MicroPython](https://github.com/bbcmicrobit/micropython)
+version for the BBC micro:bit!
 
-***NOTE*** - This is a new fork and in early stages of development.  Please be patient as this develops out.  The goal is to help educators have an active fork to add custom functionality to their curriculum.
+
+Goals of MiniPython and Contrast to MicroPython
+-----------------------------------------------
+
+***NOTE:*** This is a new fork and in early stages of development.  Please be patient as this develops out.
+
+The goal is to help educators have an active fork to add custom functionality to their curriculum in the form of modules.
+This way, a teacher could distribute an hex-file containing all the necessary tools/libraries for his/her course.
+To allow for this, a step-by-step guide for how to build your own modules will be published here soon.
+
+The same technique would allow people hacking on MicroPython to easily test out a new module which maybe they would like to have included in an "official release" for a specific HW plattform.
+
+In contrast, [MicroPython](https://micropython.org/) aims to provide a lean implementation of (a subset of) Python 3 with the python standard library, upon which people can build custom projects.
+
+The ultimate goal is to get more people involved with MicroPython nothing more.
+
+
+Overview and Build instructions
+===============================
+
 
 To get involved with the micro:bit community join the Slack channel by signing up here:
 https://tech.microbit.org/get-involved/where-to-find/
